@@ -1,6 +1,6 @@
 <template>
   <section class="products">
-       <h1>Titolo</h1>
+       <h1>Jumbo</h1>
   </section>
 </template>
 
@@ -10,6 +10,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
+section {
+  height: 200px;
+  color: #fff;
+  background: black;
+  text-align: center;
+}
 
 </style>

@@ -5,11 +5,13 @@
 
      <!--Main-->
      <main>
-         <Products/>
+        <Products />
      </main>
 
      <!--Footer-->
-     <footer>qua footer</footer>
+     <footer>
+        <Footer /> 
+     </footer>
 
     <!--puoi cancellare dopo-->
     <!--<img alt="Vue logo" src="./assets/logo.png">-->
@@ -20,6 +22,7 @@
 <script>
 import Header from '@/components/Header.vue';
 import Products from '@/components/Products.vue';
+import Footer from '@/components/Footer.vue';
 
 //import HelloWorld from './components/HelloWorld.vue'
 
@@ -28,21 +31,19 @@ export default {
   components: {
       Header,
       Products,
+      Footer,
+  
     // HelloWorld:HelloWorld come se fosse cosi ma e abbreviato
   }
 }
 </script>
 
 <style lang="scss">
+// qua vanno gli stili per tutta la pagina
+// se vuoi poi importali
+// general importazione
+@import './styles/general.scss';
+// utilities importazione
+@import './styles/utilities.scss';
 
-
-/* puoi cancellare dopo
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}*/
 </style>
