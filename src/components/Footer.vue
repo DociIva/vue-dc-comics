@@ -1,6 +1,8 @@
 <template>
-   <div class="container footer">
-      <!--lista-->
+  <div class="back-img">
+
+     <div class="container footer">
+        <!--lista-->
       
        <nav>
            <h2>DC COMICS</h2>
@@ -34,8 +36,15 @@
                </li>
           </ul>
         </nav>
-   </div>
+    </div>
+     <!--ImmagineDc-->
+     <div class="footer-image container">
+         
+     </div>
 
+
+  </div>
+ 
 </template>
 
 <script>
@@ -149,6 +158,20 @@ export default {
 </script>
 
 <style scoped lang="scss">
+//Footer
+.footer {
+   display: flex;
+   justify-content: flex-start; 
+}
+/*Back img*/
+.back-img {
+   background-image: url(../assets/img/footer-bg.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 100%;
+   background-size: cover;
+}
+// lista
 ul {
    list-style: none;
    margin: 20px;
@@ -156,19 +179,21 @@ ul {
 li {
    a {
        text-decoration: none;
-       color: black;
+       color: #959595;
       }
       padding:  5px;
-}
-.footer {
-   display: flex;
-   justify-content: flex-start;
-   background: lightseagreen;
-      
 }
 h2 {
   color: #fff;
   margin: 20px;
+}
+.footer-image {
+   background-image:url(../assets/img/dc-logo-bg.png);
+   background-repeat: no-repeat;
+   background-position: right;
+   width: 100%;
+   height: 400px;
+   //background-size: cover;
 }
 
 </style>
