@@ -1,6 +1,20 @@
 <template>
   <div class="back-img">
-
+     
+     <div class="bg-footer">
+         <div class="img">
+            <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+            <span>DICITALS COMICS</span>
+            <img src="../assets/img/buy-comics-merchandise.png" alt="">
+            <span>DICITALS COMICS</span>
+            <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+            <span>DICITALS COMICS</span>
+            <img src="../assets/img/buy-comics-shop-locator.png" alt="">
+            <span>DICITALS COMICS</span>
+            <img src="../assets/img/buy-dc-power-visa.svg" alt="">
+            <span>DICITALS COMICS</span>
+         </div>
+     </div>
      <div class="container footer">
         <!--lista-->
       
@@ -55,9 +69,9 @@
           </div>
      </div>
 
-
+     
   </div>
- 
+
 </template>
 
 <script>
@@ -176,6 +190,26 @@ export default {
    display: flex;
    justify-content: flex-start; 
 }
+.bg-footer {
+   width: 100%;
+   height: 120px;
+   background:#0282f9;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+}
+.img { 
+   display: flex;
+   align-items: center;
+   flex-basis: max-content;
+}
+.bg-footer img {
+   width: 60px;
+}
+.bg-footer span {
+   font-size: 10px;
+   color: #fff;
+}
 /*Back img*/
 .back-img {
    background-image: url(../assets/img/footer-bg.jpg);
@@ -213,7 +247,6 @@ h2 {
    right: 0;
 }
 .footer-nav-end {
-   height: 150px;
    background: #303030;
    display: flex;
    justify-content: space-between;
