@@ -4,7 +4,6 @@
              <a href="#">
                <img src="@/assets/img/dc-logo.png" alt="Logo immgine DC">
              </a>
-
             <nav>
                <ul>
                   <li v-for="(link, index) in links"
@@ -15,9 +14,10 @@
                    </li>
                 </ul>
             </nav>
-
         </div>
-       
+        <div class="background">
+            
+        </div>
     </header>
 </template>
 
@@ -104,16 +104,18 @@ li {
         &:hover {
            border-bottom: 4px solid #0282f9
         }
-        
-    } 
-}
-
-
+      }
+      text-transform: uppercase;  
+}      
 /*img*/
 img {
-    max-width: 80px;
-    height: 60px;
-    margin: 1rem;
+  max-width: 80px;
+  height: 60px;
+  margin: 1rem;
 }
-
+.background {
+  background-image: url(../assets/img/jumbotron.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+}
 </style>

@@ -174,7 +174,7 @@ export default {
 // lista
 ul {
    list-style: none;
-   margin: 20px;
+   margin: 20px; 
 }
 li {
    a {
@@ -182,6 +182,7 @@ li {
        color: #959595;
       }
       padding:  5px;
+     
 }
 h2 {
   color: #fff;

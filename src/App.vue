@@ -1,11 +1,14 @@
 <template>
   <div id="app">
      <!--Header-->
-       <Header />
-
+       <header>
+         <Header />
+       </header>
+  
      <!--Main-->
      <main>
-        <Products />
+      
+       <Products />
      </main>
 
      <!--Footer-->
@@ -14,8 +17,7 @@
      </footer>
 
     <!--puoi cancellare dopo-->
-    <!--<img alt="Vue logo" src="./assets/logo.png">-->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  
   </div>
 </template>
 
@@ -23,6 +25,7 @@
 import Header from '@/components/Header.vue';
 import Products from '@/components/Products.vue';
 import Footer from '@/components/Footer.vue';
+
 
 //import HelloWorld from './components/HelloWorld.vue'
 
@@ -32,7 +35,6 @@ export default {
       Header,
       Products,
       Footer,
-  
     // HelloWorld:HelloWorld come se fosse cosi ma e abbreviato
   }
 }
