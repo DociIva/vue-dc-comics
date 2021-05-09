@@ -42,6 +42,18 @@
          
      </div>
      <!--navigazione sotto-->
+     <div class="footer-nav-end flex">
+          <div class="accesso">
+             <button>Sing Up Now!</button>
+          </div>
+          <div class="follow-us">
+             <span>Follow Us</span>
+             <img src="../assets/img/footer-facebook.png" alt="">
+              <img src="../assets/img/footer-youtube.png" alt="">
+              <img src="../assets/img/footer-pinterest.png" alt="">
+              <img src="../assets/img/footer-periscope.png" alt="">
+          </div>
+     </div>
 
 
   </div>
@@ -200,5 +212,36 @@ h2 {
    top: 0;
    right: 0;
 }
-
+.footer-nav-end {
+   height: 150px;
+   background: #303030;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.accesso {
+   display: flex;
+   align-items: center;
+   padding: 40px;
+}
+button {
+   width: 100px;
+   height: 50px;
+   padding: 10px;
+   border: 3px solid #0282f9;
+   background: transparent;
+   color: #fff;
+}
+.follow-us {
+   display: flex;
+   align-items: center;
+   padding-right: 80px;
+}
+span { 
+   color: #0282f9;
+   padding-left: 10px;
+}
+img {
+   padding: 0 8px;
+}
 </style>

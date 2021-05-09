@@ -23,6 +23,7 @@ export default {
    }
    p {
      text-transform: uppercase;
+     margin-bottom: 20px ;
    }
 }
 
