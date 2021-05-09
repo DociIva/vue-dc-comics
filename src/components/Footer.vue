@@ -41,6 +41,7 @@
      <div class="footer-image container">
          
      </div>
+     <!--navigazione sotto-->
 
 
   </div>
@@ -170,19 +171,20 @@ export default {
    background-position: center;
    height: 100%;
    background-size: cover;
+   position: relative;
 }
 // lista
 ul {
    list-style: none;
    margin: 20px; 
+  // text-transform: uppercase;
 }
 li {
    a {
        text-decoration: none;
        color: #959595;
       }
-      padding:  5px;
-     
+      padding:  5px;    
 }
 h2 {
   color: #fff;
@@ -194,7 +196,9 @@ h2 {
    background-position: right;
    width: 100%;
    height: 400px;
-   //background-size: cover;
+   position: absolute;
+   top: 0;
+   right: 0;
 }
 
 </style>
