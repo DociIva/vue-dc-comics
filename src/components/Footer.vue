@@ -225,12 +225,18 @@ h2 {
    padding: 40px;
 }
 button {
-   width: 100px;
-   height: 50px;
+   width: 150px;
+   height: 60px;
    padding: 10px;
    border: 3px solid #0282f9;
    background: transparent;
    color: #fff;
+   text-transform: uppercase;
+   font-size: 1rem;
+   transition: background 2s;
+}
+button:hover {
+   background: limegreen;
 }
 .follow-us {
    display: flex;

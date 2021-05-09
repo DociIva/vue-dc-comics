@@ -17,7 +17,7 @@ export default {
 .content {
    flex-basis: calc(100% / 6);
     img {
-      width: 40%;
+      width: 50%;
       margin-top: 40px;
       margin-bottom: 10px;
    }
