@@ -1,19 +1,30 @@
 <template>
-   <div class="container">
-       <img :src="element.trumb" :alt="element.series">
-       <p>{{element.series}}</p>
+   <div class="content">
+       <img :src="elements.thumb" :alt="elements.series">
+       <p>{{elements.series}}</p> 
    </div>
 </template>
 
 <script>
 export default {
    name: 'Comics',
-   props: ['element']
+   props: ['elements']
+   
 }
 </script>
 
-<style>
+<style scoped lang="scss">
+.content {
+   flex-basis: calc(100% / 6);
+    img {
+      width: 40%;
+      margin-top: 40px;
+      margin-bottom: 10px;
+   }
+   p {
+     text-transform: uppercase;
+   }
+}
 
-</style>>
 
 </style>

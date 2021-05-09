@@ -1,8 +1,8 @@
 <template>
   <main class="products">
-  
-    <Comics v-for="(comic, index) in comics" :key="index" :element="comic"/>
-   
+    <div class="cards">
+    <Comics v-for="(comic, index) in comics" :key="index" :elements="comic"> </Comics>
+    </div>
       
   </main>
 </template>
@@ -19,26 +19,27 @@ export default {
    data() {
     return {
       comics: dcComics
+
     }
   },
   created() {
-    //this.getElementCard();
+    
   },
   methods: {
-   // getElementCard() {
-      // axios.get(dc-comics.js);
-    // }
+  
   }
 }
 </script>
 
 <style scoped lang="scss">
 .products {
-  height: 200px;
   color: #fff;
   background: black;
   text-align: center;
+} 
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
-
 </style>
